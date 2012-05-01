@@ -572,6 +572,10 @@ Enable page headers and add the chapter to the header line.
 
 \end_layout
 
+\begin_layout Right Footer
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch chapter-1
 status open
