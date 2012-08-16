@@ -138,12 +138,12 @@ e específicamente como parte de otro programa/paquete, el autor otorga permiso
 \end_layout
 
 \begin_layout Title
-Génesis de una Transformación Conforme 
+Una propuesta para la Enseñanza de Geometría Proyectiva
 \begin_inset Argument
 status open
 
 \begin_layout Plain Layout
-Transformación 
+Proyectiva 
 \begin_inset Note Note
 status open
 
@@ -161,12 +161,8 @@ opcional, sólo para títulos largos
 
 \end_layout
 
-\begin_layout Subtitle
-Transformación biyectiva sobre el círculo unitario
-\end_layout
-
 \begin_layout Author
-Antonio Sángari
+Carolina Sarmiento
 \begin_inset Flex InstituteMark
 status open
 
@@ -177,6 +173,29 @@ status open
 \end_inset
 
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Antonio Sángari
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
@@ -202,7 +221,7 @@ Marca de Institución
 status open
 
 \begin_layout Plain Layout
-Sángari 
+Carolina, Antonio
 \begin_inset Note Note
 status open
 
@@ -247,6 +266,33 @@ Departamento de Matemática
 \end_inset
 
 Universidad Nacional de Salta
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Departamento de Matemática
+\begin_inset Newline newline
+\end_inset
+
+Universidad Nacional de Salta
 \begin_inset Note Note
 status open
 
@@ -267,7 +313,7 @@ inst sólo si hay varias afiliaciones.
 status open
 
 \begin_layout Plain Layout
-Universidad Nacional de Salta
+Universidades de Algún Sitio y de Otro Sitio
 \begin_inset Note Note
 status collapsed
 
@@ -286,7 +332,7 @@ opcional, aunque generalmente necesario
 \end_layout
 
 \begin_layout Date
-REM, 2012
+Seminario del Profesorado, 2012
 \begin_inset Note Note
 status collapsed
 
@@ -349,9 +395,9 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
-pgfdeclareimage[height=0.5cm]{institution-logo}{escunsa.bmp}
+pgfdeclareimage[height=0.5cm]{institution-logo}{institución-logo-nombrearchivo}
 \end_layout
 
 \begin_layout Plain Layout
@@ -360,7 +406,7 @@ pgfdeclareimage[height=0.5cm]{institution-logo}{escunsa.bmp}
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 logo{
 \backslash
@@ -553,25 +599,11 @@ Si se omiten detalles vitales para una demostración/implementación, dígalo
 \end_layout
 
 \begin_layout Section
-Introducción
-\end_layout
-
-\begin_layout Subsection
-Contexto del Problema
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Contexto básico
-\end_layout
-
-\end_inset
-
-
+Fundamentación
 \end_layout
 
 \begin_layout BeginFrame
-Teorema de la aplicación abierta de Riemman 
+Nuestra Propuesta 
 \begin_inset Note Note
 status open
 
@@ -598,10 +630,32 @@ Usar Letras Capitales
 
 \end_layout
 
-\begin_layout Theorem
-Cualquier dominio del plano complejo abierto simplemente conexo y distinto
- de todo el plano complejo, puede transformarse por medio de una transformación
- conforme biyectiva en el círculo unitario
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Este trabajo propone estudiar la Geometría Proyectiva
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ y diseñar una propuesta de enseñanza de estos tópicos.
+ El problema que intenta este trabajo solucionar es la carga curricular
+ escasa que se nota en los contenidos tratados en geometría en los profesorados
+ y licenciaturas en Matemáticas en nuestro medio.
 \end_layout
 
 \begin_layout Pause
@@ -619,7 +673,7 @@ status open
 
 \end_inset
 
-Este importante teorema
+Por lo tanto...
 \begin_inset ERT
 status open
 
@@ -630,594 +684,301 @@ status open
 
 \end_inset
 
-tiene amplia utilidad en resolución de ecuaciones diferenciales cuando el
- operador relacionado es invariante frente a las transformaciones conformes,
- como es el caso del Laplaciano.
- Hay algoritmos explícitos.
- para ciertos tipos de dominio, que brindan una aproximación de la transformació
-n conforme, que bajo ciertas circunstancias es única.
- 
-\end_layout
-
-\begin_layout BeginFrame
-Corolario del teorema de Riemman
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\emph on
-N.
- del T.
-\emph default
-: En el título original pone además 
-\begin_inset Quotes eld
-\end_inset
-
-Usar Letras Capitales
-\begin_inset Quotes erd
-\end_inset
-
-.
- Esto es habitual en inglés pero no en español.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Corollary
-Si sobre la frontera de un dominio abierto, simplemente conexo, se elijen
- cuatro puntos distintos dos a dos, existe una transformación conforme biyectiva
- que transforma dicho dominio en un rectángulo de base unitaria, donde los
- primeros cuatro puntos se transforman en los vértices de este rectángulo.
-\end_layout
-
-\begin_layout Pause
-
-\end_layout
-
-\begin_layout Block
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-La existencia
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-de esta última transformación conforme tiene mucho sentido cuando se resuelven
- ecuaciones diferenciales, puesto que es mucho más fácil trabajar sobre
- un rectángulo.
-\end_layout
-
-\begin_layout BeginFrame
-Pasos para construir la Transformación
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<1->
-\end_layout
-
-\end_inset
-
- Para transformar un dominio con cuatro puntos determinados sobre su frontera
- en un círculo unitario puede usarse procedimientos debido a Koebe en 1912.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<2->
-\end_layout
-
-\end_inset
-
- Luego transformar el círculo unitario con cuatro puntos formando los vértices
- de un cuadrilátero cualquiera en un circulo unitario donde los transformados
- de los puntos son los vértices de un rectángulo por fórmulas de la forma
-\begin_inset Formula 
-\[
-\frac{z-a}{1-\overline{a}z}
-\]
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<3->
-\end_layout
-
-\end_inset
-
- Por último se usan inversiones y funciones elípticas para transformar este
- último círculo en el rectángulo buscado.
-\end_layout
-
-\begin_layout Subsection
-Nuestro Problema
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Contexto básico
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout BeginFrame
-Nuestro trabajo
-\end_layout
-
-\begin_layout AlertBlock
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-<1->
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-Nuestro
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-trabajo presenta una sucesión de conceptos elementales de geometría y de
- variable compleja, tendientes a resolver un problema de las transformaciones
- conformes en el plano complejo.
- El problema trata sobre encontrar una transformación conforme biyectiva
- del círculo unitario en si mismo que transforme cuatro puntos de la circunferen
-cia en vértices de un rectángulo, es decir, justificar la ecuación del fotograma
- anterior
-\end_layout
-
-\begin_layout Block
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-<2->
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-Usaré
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-geometría sintética básica para encontrar el punto mencionado y, a partir
- de la construcción realizada, se toman datos suficientes para simplificar
- los cálculos y hallar las coordenadas correspondientes.
-\end_layout
-
-\begin_layout BeginFrame
-Tabla de Gráficas
-\end_layout
-
-\begin_layout Pause
-
-\end_layout
-
-\begin_layout Standard
-
-\lang spanish-mexico
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\lang spanish-mexico
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{figure}[t] 
-\backslash
-centering 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<1>[scale=0.3]{inversodeunpunto0.png}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<2>[scale=0.3]{inversodeunpunto1.png}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<3>[scale=0.3]{inversodeunpunto2.png} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<4>[scale=0.3]{inversodeunpunto3.png} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<5>[scale=0.3]{inversodeunpunto4.png}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<6>[scale=0.3]{inversodeunpunto5.png} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<7>[scale=0.3]{inversodeunpunto6.png} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<8>[scale=0.3]{inversodeunpunto7.png} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics<-9>[scale=0.3]{inversodeunpunto8.png}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{figure}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang spanish-mexico
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\lang spanish-mexico
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:construcción04"
-
-\end_inset
-
-Ejemplito
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Trabajo previo
-\end_layout
-
-\begin_layout BeginFrame
-Poner títulos informativos
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-N.
- del T.: Para traducir en la salida las etiquetas AMS: ejemplo, teorema,
- etc, se puede usar uno de estos métodos:
-\end_layout
-
-\begin_layout Itemize
-Preparar un archivo '.dict' en español para que lo use el paquete 'translator',
- que es cargado automáticamente por beamer.
-\end_layout
-
-\begin_layout Itemize
-Añadir en el preámbulo LaTeX comandos como los descritos en 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://wiki.lyx.org/LyX/I18nLabels
-\end_layout
-
-\end_inset
-
-, por ej.:
-\begin_inset Newline newline
-\end_inset
-
-
-\family typewriter
-
-\backslash
-newtheorem{eje}{Ejemplo}
-\begin_inset Newline newline
-\end_inset
-
-
-\backslash
-renewenvironment{example}{
-\backslash
-begin{eje}}{
-\backslash
-end{eje}}
-\end_layout
-
-\begin_layout Itemize
-No se preocupen, ya está hecho, vean el preámbulo de latex
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-<1->
-\end_layout
-
-\end_inset
-
-En la primera diapositiva.
-\end_layout
-
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Example
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-<2->
-\end_layout
-
-\end_inset
-
-En la segunda diapositiva.
-\end_layout
-
-\begin_layout Example
-
+ consideramos una necesidad imperiosa aportar un esquema detallado de los
+ conceptos que deberían tratarse debido a la amplia gama de aplicaciones
+ que se deducen de la Geometría proyectiva.
 \end_layout
 
 \begin_layout Section
-Nuestros resultados/Contribución
-\end_layout
-
-\begin_layout Subsection
-Resultados principales
+Planteo del Problema
 \end_layout
 
 \begin_layout BeginFrame
-Poner títulos informativos
+El problema 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+N.
+ del T.
+\emph default
+: En el título original pone además 
+\begin_inset Quotes eld
+\end_inset
+
+Usar Letras Capitales
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto es habitual en inglés pero no en español.
 \end_layout
 
-\begin_layout Theorem
-En la primera diapositiva.
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Inicialmente
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ la Geometría Proyectiva tuvo su origen en la necesidad de indicar la perspectiv
+a en grabados y cuadros en períodos renacentistas.
+ Por ejemplo, se necesitaba dar idea de la profundidad en un cuadro bidimensiona
+l.
+ 
 \end_layout
 
 \begin_layout Pause
 
 \end_layout
 
-\begin_layout Corollary
-En la segunda diapositiva.
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Esto dio origen
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ a conceptos en un principio poco claros como objetos en el infinito.
+ Con los aportes de Matemáticos como Pascal y Desargues comenzó un proceso
+ de independización de la Geometría Proyectiva del resto de la Geometría.
+ 
 \end_layout
 
 \begin_layout BeginFrame
-Poner títulos informativos 
+El problema (continuación)
 \end_layout
 
-\begin_layout ColumnsTopAligned
-
-\end_layout
-
-\begin_deeper
-\begin_layout Column
-5cm
-\end_layout
-
-\begin_layout Theorem
+\begin_layout Block
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-<1->
+{
 \end_layout
 
 \end_inset
 
-En la columna de la izquierda.
-\end_layout
-
-\begin_layout Column
-5cm
-\end_layout
-
-\begin_layout Corollary
+Actualmente,
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-<2->
+}
 \end_layout
 
 \end_inset
 
-En la columna de la derecha.
-\begin_inset Newline newline
-\end_inset
-
-Nueva línea
+ es muy común encontrar aplicaciones de la Geometría Proyectiva en los dibujos
+ por computadora de superficies alabeadas y volúmenes.
 \end_layout
 
-\end_deeper
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout BeginFrame
+Objetivos 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+N.
+ del T.
+\emph default
+: En el título original pone además 
+\begin_inset Quotes eld
+\end_inset
+
+Usar Letras Capitales
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto es habitual en inglés pero no en español.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Estudiar conceptos y aplicaciones de Geometría Proyectiva.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Diseñar una propuesta para la enseñanza de Geometría Proyectiva
+\end_layout
+
+\begin_layout Section
+Metodología
+\end_layout
+
+\begin_layout BeginFrame
+Cómo haremos...
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+N.
+ del T.
+\emph default
+: En el título original pone además 
+\begin_inset Quotes eld
+\end_inset
+
+Usar Letras Capitales
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto es habitual en inglés pero no en español.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+En una etapa inicial 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+arrancaremos estudiando los conceptos fundamentales de la geometría proyectiva,
+ es decir, trataremos a la teoría comparándola con la geometría plana euclidiana.
+ Expondremos resultados básicos y nos ocuparemos de indicar los primeros
+ ejemplos.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Posteriormente
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ estudiaremos una forma de poner coordenadas proyectivas al plano y al espacio,
+ para dar una idea de perspectiva en gráficos.
+ En esta etapa nos asistiremos con programas de computadoras como por ejemplo
+ el Geogebra
+\end_layout
+
+\begin_layout Section
+Cronograma
+\end_layout
+
 \begin_layout Subsection
-Ideas básicas para demostraciones/implementaciones
-\end_layout
-
-\begin_layout Section*
-Sumario
+Primer Cuatrimestre
 \end_layout
 
 \begin_layout BeginFrame
-Sumario
-\end_layout
-
-\begin_layout Itemize
-El
-\color none
- 
-\color red
-primer mensaje principal
-\color none
- de la exposición en una o dos líneas.
-\end_layout
-
-\begin_layout Itemize
-El
-\color none
- 
-\color red
-segundo mensaje principal
-\color none
- de la exposición en una o dos líneas.
-\end_layout
-
-\begin_layout Itemize
-Quizás un
-\color none
- 
-\color red
-tercer mensaje
-\color none
-, pero no más.
-\end_layout
-
-\begin_layout Standard
+Mayo y Junio 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-La perspectiva siempre es opcional.
+
+\emph on
+N.
+ del T.
+\emph default
+: En el título original pone además 
+\begin_inset Quotes eld
+\end_inset
+
+Usar Letras Capitales
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto es habitual en inglés pero no en español.
 \end_layout
 
 \end_inset
@@ -1225,211 +986,266 @@ La perspectiva siempre es opcional.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout ExampleBlock
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-
-\backslash
-vskip0pt plus.5fill
+{
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Itemize
-Perspectiva
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Lo que no hemos hecho todavía.
-\end_layout
-
-\begin_layout Itemize
-Otras cosas pendientes.
-\end_layout
-
-\end_deeper
-\begin_layout EndFrame
-
-\end_layout
-
-\begin_layout Section*
-\start_of_appendix
-\begin_inset Note Note
+Mayo
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Todo lo siguiente es opcional y generalmente no es necesario.
+
+}
 \end_layout
 
 \end_inset
 
-Apéndice
+ Estudio del Capítulo V de libro Geometría Superior de Efimov.
 \end_layout
 
-\begin_layout Subsection*
-Lecturas complementarias
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Junio
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ Continuación con la lectura y análisis de este libro.
+ Búsqueda y compilación de material bibliográfico necesario para continuar
+ el estudio
+\end_layout
+
+\begin_layout Subsection
+Segundo Cuatrimestre
 \end_layout
 
 \begin_layout BeginFrame
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-[allowframebreaks]
-\end_layout
-
-\end_inset
-
-Lecturas complementarias
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-beamertemplatebookbibitems
-\end_layout
-
-\end_inset
-
-
+Agosto y Septiembre
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Empezar con libros generales.
+
+\emph on
+N.
+ del T.
+\emph default
+: En el título original pone además 
+\begin_inset Quotes eld
+\end_inset
+
+Usar Letras Capitales
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto es habitual en inglés pero no en español.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Agosto
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+Diseñar gráficos dinámicos con Geogebra para simular movimiento de cuerpos
+ en el espacio.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Septiembre
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+Continuación del problema de simulación de cuerpos en 3D
+\end_layout
+
+\begin_layout BeginFrame
+Octubre y Noviembre
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+N.
+ del T.
+\emph default
+: En el título original pone además 
+\begin_inset Quotes eld
+\end_inset
+
+Usar Letras Capitales
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto es habitual en inglés pero no en español.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Octubre
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+Estudio de cónicas proyectivas 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Noviembre
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+Conclusiones del tema estudiado.
+ Redacción final del documento.
+\end_layout
+
+\begin_layout BeginFrame
+Bibliografía
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring Referencias
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "Autor1990"
+key "Efimov"
 
 \end_inset
 
-A.
- Autor.
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
-
-\emph on
-Manual de Lo que sea
-\emph default
-.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- Editorial, 1990.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-beamertemplatearticlebibitems
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Y seguir con artículos, una lista breve.
- 
-\end_layout
-
-\end_inset
-
-
+N.
+ V.
+ Efimov.
+ Geometría Superior.
+ Editorial Mir.
+ Moscú.
+ 1984
 \end_layout
 
 \begin_layout Bibliography
 \labelwidthstring Referencias
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "Alguien2002"
+label "Ge"
+key "Geogebra"
 
 \end_inset
 
-S.
- Alguien.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- Sobre esto y aquello
-\emph on
-.
-
-\emph default
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
-
-\emph on
-Revista Esto y Aquello
-\emph default
-.
- 2(1):50--100, 2000.
+Tutoriales del Geogebra en Castellano.
+ Recuperado de http://wiki.geogebra.org/es/Tutorial%3AP%C3%A1gina_Principal
+ el 5 de Junio de 2012
 \end_layout
 
 \begin_layout EndFrame
